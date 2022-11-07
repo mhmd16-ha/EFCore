@@ -6,7 +6,9 @@ namespace EFCore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var _context = new ApplicationDbContext();
+           
+            _context.SaveChanges();
         }
     }
 }
